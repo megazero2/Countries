@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Countries.Views.AddPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Name" TextColor="Black"/>
+            <Entry Text="{Binding Name, Mode=TwoWay}"/>
+            <Label Text="Alpha2" TextColor="Black"/>
+            <Entry Text="{Binding Alpha2, Mode=TwoWay}"/>
+            <Label Text="Alha3" TextColor="Black"/>
+            <Entry Text="{Binding Alha3, Mode=TwoWay}"/>
+            <Label Text="Code" TextColor="Black"/>
+            <Entry Text="{Binding Code, Mode=TwoWay}"/>
+            <Label Text="Iso_3166_2" TextColor="Black"/>
+            <Entry Text="{Binding Iso_3166_2, Mode=TwoWay}"/>
+            <Label Text="Is_independent" TextColor="Black"/>
+            <Entry Text="{Binding Is_independent, Mode=TwoWay}" Placeholder="true or false"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

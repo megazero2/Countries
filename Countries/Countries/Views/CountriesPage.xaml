@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Countries.Views.CountriesPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout>
+        <!--<StackLayout HorizontalOptions="Center">
+            <Button Text="Agregar" Clicked="Agregar_Clicked"/>
+            <Button Text="Eliminar" Clicked="Eliminar_Clicked"/>
+        </StackLayout>-->
+        <ListView x:Name="listCountries">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="Center">
+                            <!--<Label Text="{Binding Id}"/>-->
+                            <Label Text="{Binding Name}"/>
+                            <Label Text="{Binding Alpha2}"/>
+                            <!--<Label Text="{Binding Alpha3}"/>
+                            <Label Text="{Binding Code}"/>
+                            <Label Text="{Binding Iso3166_2}"/>
+                            <Label Text="{Binding IsIndependent}"/>
+                            <Label Text="{Binding CreatedAt}"/>
+                            <Label Text="{Binding UpdatedAt}"/>-->
+                        </StackLayout>
+                    </ViewCell>    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
